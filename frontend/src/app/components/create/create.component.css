@@ -1,0 +1,16 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  mat-card {
+    width: calc(90% - 70px);
+    height: calc(100% - 70px);
+    max-width: 80%;    
+    margin: 2em auto;    
+    
+  }

@@ -1,0 +1,33 @@
+<br>
+<mat-card>
+  <section class="mat-typography">
+    <h3>Crear o Editar Cliente</h3> 
+  </section>
+  <br>
+  <mat-divider role="separator" aria-orientation="horizontal"></mat-divider>
+  <br>
+  <mat-card-content  >
+    <div class="example-container">  
+      <mat-form-field>
+        <input matInput placeholder="Nombre">
+      </mat-form-field>
+
+      <mat-form-field>
+        <textarea matInput placeholder="Textarea"></textarea>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Select">
+          <mat-option value="option">Option</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+</mat-card-content>
+<mat-divider role="separator" aria-orientation="horizontal"></mat-divider>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" [routerLink]="['/list']" [routerLinkActive]="['router-link-active']">Guardar</button>
+    <button mat-raised-button color="accent" [routerLink]="['/list']" [routerLinkActive]="['router-link-active']">Volver</button>
+  </mat-card-actions>
+
+</mat-card>
